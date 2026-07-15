@@ -8,7 +8,7 @@ int main() {
   bool b1 = true; // Copy initialization
   bool b2(true);  // Direct initialization
   bool b3{true};  // List initialization (Khuyên dùng trong C++ hiện đại)
-
+  bool b4 = {true};
   // -------------------------------------------------------------------------
   // 2. KIỂU CHAR VÀ MÃ ASCII
   // -------------------------------------------------------------------------
