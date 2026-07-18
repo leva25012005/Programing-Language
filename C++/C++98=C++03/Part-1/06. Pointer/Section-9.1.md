@@ -1,16 +1,17 @@
 #Con trỏ hàm nâng cao, `using` / `typedef` và Lambda Expression
 
 Trong C++,
-    con trỏ
-    hàm(Function Pointer) là một công cụ mạnh giúp truyền hàm như một tham số,
-    tạo Callback hoặc xây dựng các hệ thống linh hoạt.
+con trỏ
+hàm(Function Pointer) là một công cụ mạnh giúp truyền hàm như một tham số,
+tạo Callback hoặc xây dựng các hệ thống linh hoạt.
 
     Tuy nhiên,
     cú pháp của con trỏ hàm truyền thống khá dài và dễ viết sai.
 
     Ví dụ :
 
-```cpp int (*phep_toan)(int, int);
+```cpp
+int (*phep_toan)(int, int);
 ```
 
     Để giải quyết vấn đề này,
@@ -32,7 +33,8 @@ Trong C++,
 
     Đối với con trỏ hàm :
 
-```cpp typedef int (*PhepToanCu)(int, int);
+```cpp
+typedef int (*PhepToanCu)(int, int);
 ```
 
     Nghĩa là :
@@ -42,12 +44,14 @@ Trong C++,
 
       Thay vì phải viết :
 
-```cpp int (*ptr)(int, int);
+```cpp
+int (*ptr)(int, int);
 ```
 
     ta có thể viết :
 
-```cpp PhepToanCu ptr;
+```cpp
+PhepToanCu ptr;
 ```
 
 Code ngắn gọn hơn rất nhiều.
@@ -66,12 +70,15 @@ using TenBiDanh = KieuDuLieu;
 
     Ví dụ :
 
-```cpp using PhepToanMoi = int(*)(int, int);
+```cpp
+using PhepToanMoi = int(*)(int, int);
+
 ```
 
     Ý nghĩa hoàn toàn giống :
 
 ```cpp typedef int (*PhepToanCu)(int, int);
+
 ```
 
     -- -
@@ -80,12 +87,16 @@ using TenBiDanh = KieuDuLieu;
 
     ## # `typedef`
 
-```cpp typedef int (*PhepToan)(int, int);
+```cpp
+typedef int (*PhepToan)(int, int);
+
 ```
 
     ## # `using`
 
-```cpp using PhepToan = int(*)(int, int);
+```cpp
+using PhepToan = int(*)(int, int);
+
 ```
 
 `using` có cú pháp gần giống phép gán nên dễ đọc hơn.
@@ -136,6 +147,7 @@ int main() {
     Kết quả :
 
 ```text 15
+
 ```
 
     -- -
@@ -150,7 +162,8 @@ int main() {
 
      Ví dụ :
 
-```cpp[](int a, int b) {
+```cpp
+[](int a, int b) {
   return a + b;
 }
 ```
@@ -170,7 +183,8 @@ int main() {
 
 #Cú pháp tổng quát
 
-```cpp[capture](parameter)
+```cpp
+[capture](parameter)
         ->return_type {
   body
 }
@@ -182,6 +196,7 @@ int main() {
     Thành phần | Ý nghĩa | | -- -- -- -- -- -- | -- -- -- -- -- | | `[]` |
     Capture variables | | `()` | Danh sách tham số |
     | `->` | Kiểu trả về(có thể bỏ nếu compiler suy luận được) | | `{}
+
 ` | Thân hàm |
 
     -- -
@@ -189,17 +204,20 @@ int main() {
 #Ví dụ đơn giản
 
 ```cpp auto tinhNhan = [](int a, int b) { return a * b; };
+
 ```
 
     Gọi :
 
-```cpp std::cout
+```cpp
+std::cout
     << tinhNhan(4, 5);
 ```
 
     Kết quả
 
 ```text 20
+
 ```
 
     -- -
@@ -210,12 +228,15 @@ int main() {
 
     Do đó gần như luôn dùng :
 
-```cpp auto
+```cpp
+auto
 ```
 
     Ví dụ :
 
-```cpp auto hello = [] { std::cout << "Hello"; };
+```cpp
+auto hello = [] { std::cout << "Hello"; };
+
 ```
 
     -- -
@@ -226,13 +247,15 @@ int main() {
 
     Ví dụ :
 
-```cpp thucThi(20, 4, [](int a, int b) { return a / b; });
+```cpp
+thucThi(20, 4, [](int a, int b) { return a / b; });
+
 ```
 
     Không cần viết :
 
-```cpp int
-    chia(int a, int b) {
+```cpp
+int chia(int a, int b) {
   return a / b;
 }
 ```
@@ -286,6 +309,7 @@ int main() {
     Kết quả :
 
 ```text 20 5
+
 ```
 
     -- -

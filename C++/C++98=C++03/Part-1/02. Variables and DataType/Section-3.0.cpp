@@ -58,7 +58,7 @@ int main() {
   // 5. CẢNH BÁO: UNDEFINED BEHAVIOR (UB) VỚI BIẾN CHƯA KHỞI TẠO
   // -------------------------------------------------------------------------
   // Dưới đây là ví dụ về nguy cơ nghiêm trọng khi KHÔNG khởi tạo biến cục bộ
-  int uninitialized_var;
+  int uninitialized_var = 1;
 
   std::cout << "--- CANH BAO: UNDEFINED BEHAVIOR ---" << std::endl;
   std::cout << "Nut canh bao! Bien chua khoi tao co gia tri rac: "

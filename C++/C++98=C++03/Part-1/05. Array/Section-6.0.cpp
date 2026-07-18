@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector> // Cần để dùng std::vector (Mảng động)
 
-
 int main() {
   // -------------------------------------------------------------------------
   // 1. MẢNG TĨNH KIỂU C CỔ ĐIỂN (C-Style Array)
