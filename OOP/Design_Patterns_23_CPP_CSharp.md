@@ -1,5 +1,7 @@
 # 23 DESIGN PATTERN (GoF) — TỔNG HỢP KÈM CODE C++ & C#
 
+> https://viblo.asia/p/design-patterns-la-gi-tai-sao-no-lai-la-tro-thu-dac-luc-cua-developers-tong-hop-23-mau-design-pattern-GrLZDBQV5k0
+
 > Tài liệu dựa trên phân loại chuẩn GoF (Gang of Four) — 3 nhóm, 23 mẫu. Mỗi pattern gồm: **mục đích**, **mức độ phổ biến thực tế**, **code minh họa C++** và **C#**.
 >
 > Ký hiệu mức độ phổ biến: ⭐⭐⭐ Rất hay dùng · ⭐⭐ Thường gặp · ⭐ Ít gặp hơn (nhưng vẫn cần biết)
