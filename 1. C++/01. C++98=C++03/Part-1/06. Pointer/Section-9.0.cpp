@@ -85,6 +85,5 @@ int main() {
   std::cout << "Truyen tinhHieu: ";
   thucThiPhepTinh(10, 20, tinhHieu);
   std::cout << "------------------------------------------------\n";
-
   return 0;
 }

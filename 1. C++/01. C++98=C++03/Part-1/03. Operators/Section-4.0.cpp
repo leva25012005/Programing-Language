@@ -37,6 +37,7 @@ int main() {
   std::cout << "Gia tri x sau khi += 5 va *= 2 la: " << x << std::endl;
   std::cout << "------------------------------------------------" << std::endl;
 
+#pragma region IMPORTANT
   // -------------------------------------------------------------------------
   // 3. CÁI BẪY 2: SỰ KHÁC BIỆT CỦA ++X VÀ X++ (TIMING IN EXPRESSION)
   // -------------------------------------------------------------------------
@@ -63,6 +64,7 @@ int main() {
   std::cout << "Gia tri y hien tai: " << y << std::endl;
 
   std::cout << "------------------------------------------------" << std::endl;
+#pragma endregion
 
   return 0;
 }

@@ -1,3 +1,4 @@
+#pragma region IMPORTANT
 #include <array>
 #include <iostream>
 #include <vector>
@@ -83,3 +84,4 @@ int main() {
 
   return 0;
 }
+#pragma endregion

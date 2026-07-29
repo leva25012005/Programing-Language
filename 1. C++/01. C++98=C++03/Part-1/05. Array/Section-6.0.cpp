@@ -22,6 +22,7 @@ int main() {
   }
   std::cout << "\n------------------------------------------------\n";
 
+#pragma region IMPORTANT
   // -------------------------------------------------------------------------
   // 2. MẢNG TĨNH HIỆN ĐẠI (std::array - Khuyên Dùng Cho Mảng Cố Định)
   // -------------------------------------------------------------------------
@@ -53,6 +54,7 @@ int main() {
   std::cout << "--- 3. MANG DONG (STD::VECTOR) ---" << std::endl;
   std::cout << "Kich thuoc sau khi them: " << mang_dong.size() << std::endl;
   std::cout << "Phan tu cuoi cung: " << mang_dong.back() << std::endl;
+#pragma endregion IMPORTANT
 
   // Duyệt mảng bằng cách viết hiện đại (Range-based for loop)
   std::cout << "Cac phan tu trong Vector: ";

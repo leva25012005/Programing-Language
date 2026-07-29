@@ -232,6 +232,8 @@ Tuy nhiên:
 
 ---
 
+> [!IMPORTANT]
+
 # Khi nào nên dùng Prefix và Postfix?
 
 | Trường hợp                        | Nên dùng                                    |
@@ -254,3 +256,5 @@ Tuy nhiên:
 
 > **Kết luận:**  
 > `++i` và `i++` có cùng mục đích là tăng giá trị lên `1`, nhưng `++i` hoạt động trực tiếp trên đối tượng và thường tối ưu hơn. Vì vậy, trong các trường hợp không cần giá trị cũ, **`++i` là lựa chọn được khuyến nghị trong C++ hiện đại**.
+
+> [!IMPORTANT]

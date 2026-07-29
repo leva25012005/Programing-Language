@@ -1,3 +1,5 @@
+> [!IMPORTANT]
+
 # 5. Sự mỏng manh của `std::cin.ignore()` (Rất dễ "toang")
 
 Khi kết hợp `std::cin` và `std::getline()`, rất nhiều lập trình viên gặp lỗi **bị trôi lệnh nhập**.
@@ -598,3 +600,5 @@ Nếu chương trình bị crash ngay sau đó, dòng log này đã được ghi
 > - Dùng `std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');` để loại bỏ toàn bộ dữ liệu còn lại trong bộ đệm, giúp chương trình ổn định hơn khi kết hợp `std::cin` và `std::getline()`.
 > - Kiểm tra `ho_ten.empty()` khi dữ liệu nhập là bắt buộc để tránh nhận chuỗi rỗng.
 > - Ưu tiên `\n` thay cho `std::endl` trong hầu hết các trường hợp để tối ưu hiệu năng; chỉ dùng `std::endl` khi cần flush dữ liệu ngay lập tức.
+
+> [!IMPORTANT]

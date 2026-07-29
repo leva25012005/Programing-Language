@@ -1,3 +1,4 @@
+#pragma region IMPORTANT
 #include <iomanip> // Thư viện để định dạng số thực đầu ra
 #include <iostream>
 
@@ -68,3 +69,4 @@ int main() {
 
   return 0;
 }
+#pragma endregion

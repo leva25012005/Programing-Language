@@ -64,6 +64,7 @@ int main() {
   inThongTinLon(thong_bao);
   std::cout << "------------------------------------------------\n";
 
+#pragma region IMPORTANT
   // =========================================================================
   // PHẦN 4: THAM CHIẾU NÂNG CAO - RVALUE REFERENCE (&&)
   // =========================================================================
@@ -92,6 +93,30 @@ int main() {
 
   // Ép 'chuoi_co_ten' thanh Rvalue va truyen vao ham
   xuLyChuoi(std::move(chuoi_co_ten));
+
+  // #include <iostream>
+  // #include <string>
+  // #include <vector>
+
+  //   void process(const std::string &s) {
+  //     std::cout << "Goi ham sao chep (Lvalue): " << s << "\n";
+  //   }
+
+  //   void process(std::string && s) {
+  //     std::cout << "Goi ham di chuyen (Rvalue): " << s << "\n";
+  //     // Ở đây bạn có thể "di chuyển" tài nguyên của s đi nơi khác để tối ưu
+  //   }
+
+  //   int main() {
+  //     std::string str = "Hello";
+
+  //     process(str); // Gọi hàm Lvalue vì 'str' là biến có tên ổn định
+  //     process("World"); // Gọi hàm Rvalue vì "World" là chuỗi tạm thời
+  //     (Rvalue) process(std::move(
+  //         str)); // Gọi hàm Rvalue vì std::move đã biến 'str' thành Rvalue
+  //   }
+
+#pragma endregion
 
   std::cout << "------------------------------------------------\n";
   return 0;

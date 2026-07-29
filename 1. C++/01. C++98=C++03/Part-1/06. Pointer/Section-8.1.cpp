@@ -42,6 +42,7 @@ int main() {
   std::cout << "Giai tham chieu 2 lan (**ptr_cap2): " << **ptr_cap2 << "\n";
   std::cout << "------------------------------------------\n\n";
 
+#pragma region IMPORTANT
   // =========================================================================
   // 🧠 MỤC 3: CON TRỎ THÔNG MINH (MODERN C++ SMART POINTERS)
   // =========================================================================
@@ -72,3 +73,4 @@ int main() {
 
   return 0;
 }
+#pragma endregion

@@ -1,3 +1,5 @@
+> [!IMPORTANT]
+
 # 1. "Gọi được explicit constructor" là gì?
 
 Trong C++, trình biên dịch có một cơ chế **tự động ép kiểu ngầm định (Implicit Conversion)** để giúp việc khởi tạo đối tượng trở nên thuận tiện.
@@ -217,3 +219,5 @@ chỉ có **một cách hiểu duy nhất**:
 
 > **Kết luận:**  
 > Nếu muốn tránh Most Vexing Parse, hãy ưu tiên sử dụng **brace initialization (`{}`)** khi khởi tạo đối tượng, đặc biệt với constructor mặc định.
+
+> [!IMPORTANT]
